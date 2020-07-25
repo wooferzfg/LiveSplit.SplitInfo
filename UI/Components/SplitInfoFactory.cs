@@ -11,7 +11,7 @@ namespace LiveSplit.UI.Components
 
         public ComponentCategory Category => ComponentCategory.Other;
 
-        public IComponent Create(LiveSplitState state) => new SplitInfo();
+        public IComponent Create(LiveSplitState state) => new SplitInfo(state);
 
         public string UpdateName => ComponentName;
 
